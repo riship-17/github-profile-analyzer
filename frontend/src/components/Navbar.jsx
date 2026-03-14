@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Github, Rocket, LayoutDashboard } from 'lucide-react';
+import { Github, LayoutDashboard } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -8,7 +8,6 @@ const Navbar = () => {
 
     const navItems = [
         { name: 'Dashboard', path: '/', icon: LayoutDashboard },
-        { name: 'AutoApply', path: '/auto-apply', icon: Rocket },
     ];
 
     return (
