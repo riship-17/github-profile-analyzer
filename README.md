@@ -1,6 +1,6 @@
 # GitHub Profile Analyzer 🚀
 
-![Dashboard Mockup](assets/mockup.png)
+
 
 GitHub Profile Analyzer is a high-performance, full-stack application designed to provide deep analytical insights into GitHub profiles. Using the GitHub REST API, it aggregates data to calculate developer scores, visualize skill sets, and generate professional resumes in real-time.
 
