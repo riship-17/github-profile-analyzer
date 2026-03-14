@@ -1,0 +1,572 @@
+[dotenv@17.3.1] injecting env (1) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+Server is running on port 5001
+AxiosError: Request failed with status code 404
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at Unzip.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at Unzip.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserProfile (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:24:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:7:25
+AxiosError: Request failed with status code 403
+    at settle (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:2304:7)
+    at IncomingMessage.handleStreamEnd (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:3772:13)
+    at IncomingMessage.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/rishi/Github/github-profile-analyzer/backend/node_modules/axios/dist/node/axios.cjs:5110:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserRepos (/Users/rishi/Github/github-profile-analyzer/backend/utils/github.js:30:22)
+    at async /Users/rishi/Github/github-profile-analyzer/backend/routes/api.js:32:23
