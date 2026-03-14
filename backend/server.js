@@ -19,17 +19,17 @@ const allowedOrigins = [
 
 const corsOptions = {
     origin: function (origin, callback) {
-        // Allow requests with no origin (like mobile apps or curl) 
-        // but only if you want to allow it. Browser requests always have an origin.
+        // Allow requests with no origin (like mobile apps, curl, or same-origin)
         if (!origin) return callback(null, true);
         
         const isVercel = origin.endsWith('.vercel.app');
-        const isLocal = origin.startsWith('http://localhost');
+        const isLocal = origin.startsWith('http://localhost') || origin.startsWith('http://127.0.0.1');
         const isExplicitlyAllowed = allowedOrigins.some(o => origin.startsWith(o));
 
         if (isVercel || isLocal || isExplicitlyAllowed) {
             callback(null, true);
         } else {
+            // This log will show up in Render's "Logs" tab to help us find the exact URL to allow
             console.error(`CORS Blocked for origin: ${origin}`);
             callback(new Error('Not allowed by CORS'));
         }
