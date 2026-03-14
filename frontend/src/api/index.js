@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 // Use environment variable for production, fallback to localhost for development
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+let rawBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+// Ensure it always ends with a slash so relative request paths append correctly
+export const API_BASE_URL = rawBaseUrl.endsWith('/') ? rawBaseUrl : `${rawBaseUrl}/`;
 
 const api = axios.create({
     baseURL: API_BASE_URL,
