@@ -1,8 +1,8 @@
-# DevNexus: Advanced GitHub Profile Analyzer 🚀
+# GitHub Profile Analyzer 🚀
 
-![DevNexus Mockup](assets/mockup.png)
+![Dashboard Mockup](assets/mockup.png)
 
-DevNexus is a high-performance, full-stack application designed to provide deep analytical insights into GitHub profiles. Using the GitHub REST API, it aggregates data to calculate developer scores, visualize skill sets, and generate professional resumes in real-time.
+GitHub Profile Analyzer is a high-performance, full-stack application designed to provide deep analytical insights into GitHub profiles. Using the GitHub REST API, it aggregates data to calculate developer scores, visualize skill sets, and generate professional resumes in real-time.
 
 ---
 
@@ -92,4 +92,4 @@ DevNexus is a high-performance, full-stack application designed to provide deep 
 
 ---
 
-Crafted with ❤️ by the DevNexus Team.
+Crafted with ❤️.

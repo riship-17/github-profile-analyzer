@@ -19,7 +19,7 @@ const Navbar = () => {
                             <Github size={20} />
                         </div>
                         <span className="text-xl font-bold text-slate-900 hidden sm:block">
-                            DevNexus
+                            GitProfile
                         </span>
                     </div>
 
