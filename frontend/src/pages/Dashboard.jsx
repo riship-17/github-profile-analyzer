@@ -8,7 +8,7 @@ import RepoAnalyzer from '../components/RepoAnalyzer';
 import ResumeGenerator from '../components/ResumeGenerator';
 import OpenSourceFinder from '../components/OpenSourceFinder';
 import DeveloperBattle from '../components/DeveloperBattle';
-import { fetchUserProfile, fetchUserAnalysis } from '../api';
+import { fetchUserProfile, fetchUserAnalysis, API_BASE_URL } from '../api';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BookMarked, Star, GitFork, Award, Github } from 'lucide-react';
 
@@ -85,6 +85,9 @@ const Dashboard = () => {
                                 <p className="text-slate-600 text-sm mb-3">
                                     {typeof error === 'string' ? error : error.details}
                                 </p>
+                                <div className="mt-2 pt-2 border-t border-slate-100 text-[10px] text-slate-400 font-mono">
+                                    Requesting: {API_BASE_URL}
+                                </div>
                                 {error.suggestion && (
                                     <div className="bg-slate-50 p-3 rounded-lg border border-slate-100">
                                         <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">How to fix:</p>
