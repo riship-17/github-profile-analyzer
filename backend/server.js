@@ -12,9 +12,30 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // CORS configuration for Production
+const allowedOrigins = [
+    process.env.FRONTEND_URL,
+    'http://localhost:5173'
+].filter(Boolean);
+
 const corsOptions = {
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173', // Fallback to local Vite dev server
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+    origin: function (origin, callback) {
+        // Allow requests with no origin (like mobile apps or curl) 
+        // but only if you want to allow it. Browser requests always have an origin.
+        if (!origin) return callback(null, true);
+        
+        const isVercel = origin.endsWith('.vercel.app');
+        const isLocal = origin.startsWith('http://localhost');
+        const isExplicitlyAllowed = allowedOrigins.some(o => origin.startsWith(o));
+
+        if (isVercel || isLocal || isExplicitlyAllowed) {
+            callback(null, true);
+        } else {
+            console.error(`CORS Blocked for origin: ${origin}`);
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    credentials: true,
+    optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions));
