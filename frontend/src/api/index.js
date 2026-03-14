@@ -18,3 +18,8 @@ export const fetchUserAnalysis = async (username) => {
     const { data } = await api.get(`analyze/${username}`);
     return data;
 };
+
+export const scanJobs = async () => {
+    const { data } = await api.get('jobs/scan');
+    return data;
+};

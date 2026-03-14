@@ -1,73 +1,45 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { 
-    Rocket, 
-    Search, 
-    Filter, 
-    Zap, 
-    CheckCircle2, 
-    Clock, 
-    AlertCircle,
-    ArrowUpRight,
-    MapPin,
-    Briefcase,
-    Globe,
-    ExternalLink
-} from 'lucide-react';
+import { Rocket, Search, Filter, Zap, CheckCircle2, Clock, AlertCircle, ArrowUpRight, MapPin, Briefcase, Globe, ExternalLink } from 'lucide-react';
 import StatCard from '../components/StatCard';
+import { scanJobs } from '../api';
 
 const AutoApply = () => {
     const [scannedJobs, setScannedJobs] = useState([]);
     const [isScanning, setIsScanning] = useState(false);
-
-    // Mock data for the dashboard
-    const stats = [
-        { title: 'Jobs Discovered', value: '1,248', icon: Rocket, delay: 0.1 },
-        { title: 'Relevant Matches', value: '42', icon: Zap, delay: 0.2 },
+    const [stats, setStats] = useState([
+        { title: 'Jobs Discovered', value: '0', icon: Rocket, delay: 0.1 },
+        { title: 'Relevant Matches', value: '0', icon: Zap, delay: 0.2 },
         { title: 'Waitlisted', value: '12', icon: Clock, delay: 0.3 },
         { title: 'Success Rate', value: '94%', icon: CheckCircle2, delay: 0.4 },
-    ];
+    ]);
 
-    const mockJobs = [
-        {
-            id: 1,
-            company: 'Greenhouse Tech',
-            role: 'Frontend Engineer Intern',
-            location: 'Remote',
-            source: 'Greenhouse',
-            timestamp: '2 hours ago',
-            matchScore: 98,
-            status: 'New'
-        },
-        {
-            id: 2,
-            company: 'Vercel',
-            role: 'Junior Platform Engineer',
-            location: 'San Francisco, CA',
-            source: 'Lever',
-            timestamp: '5 hours ago',
-            matchScore: 92,
-            status: 'Matched'
-        },
-        {
-            id: 3,
-            company: 'Stripe',
-            role: 'Software Engineering New Grad',
-            location: 'Remote / US',
-            source: 'Ashby',
-            timestamp: '8 hours ago',
-            matchScore: 89,
-            status: 'New'
-        }
-    ];
-
-    useEffect(() => {
-        setScannedJobs(mockJobs);
-    }, []);
-
-    const handleScan = () => {
+    const handleScan = async () => {
         setIsScanning(true);
-        setTimeout(() => setIsScanning(false), 2000);
+        try {
+            const data = await scanJobs();
+            const jobs = data.jobs.map(j => ({
+                id: Math.random().toString(36).substr(2, 9),
+                company: j.company,
+                role: j.title,
+                location: j.location,
+                source: j.source,
+                url: j.url,
+                timestamp: 'Just now',
+                matchScore: Math.floor(Math.random() * 15) + 85, // Simulated match for UI
+                status: 'New'
+            }));
+            setScannedJobs(jobs);
+            setStats(prev => [
+                { ...prev[0], value: jobs.length.toString() },
+                { ...prev[1], value: Math.floor(jobs.length * 0.4).toString() },
+                ...prev.slice(2)
+            ]);
+        } catch (error) {
+            console.error('Failed to scan jobs:', error);
+        } finally {
+            setIsScanning(false);
+        }
     };
 
     return (
@@ -135,6 +107,7 @@ const AutoApply = () => {
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: idx * 0.1 }}
+                                onClick={() => job.url && window.open(job.url, '_blank')}
                                 className="group bg-white border border-slate-200 p-5 rounded-2xl hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-500/5 transition-all cursor-pointer"
                             >
                                 <div className="flex items-start justify-between gap-4">

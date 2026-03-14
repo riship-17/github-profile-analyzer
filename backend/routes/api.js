@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { getUserProfile, getUserRepos, getRepoLanguages, getRepoDetails } = require('../utils/github');
+const InternshalaScraper = require('../scrapers/InternshalaScraper');
+const UnstopScraper = require('../scrapers/UnstopScraper');
 
 router.get('/user/:username', async (req, res, next) => {
     try {
@@ -234,6 +236,31 @@ router.get('/analyze/:username', async (req, res, next) => {
                 details: error.response.data
             });
         }
+        next(error);
+    }
+});
+
+// Job Scanning Endpoint
+router.get('/jobs/scan', async (req, res, next) => {
+    try {
+        const internshala = new InternshalaScraper();
+        const unstop = new UnstopScraper();
+
+        // Run scrapers concurrently
+        const results = await Promise.allSettled([
+            internshala.scrape(),
+            unstop.scrape()
+        ]);
+
+        const jobs = results
+            .filter(r => r.status === 'fulfilled')
+            .flatMap(r => r.value);
+
+        res.json({
+            count: jobs.length,
+            jobs: jobs.sort((a, b) => b.datePosted - a.datePosted)
+        });
+    } catch (error) {
         next(error);
     }
 });
