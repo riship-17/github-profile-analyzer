@@ -8,11 +8,11 @@ const api = axios.create({
 });
 
 export const fetchUserProfile = async (username) => {
-    const { data } = await api.get(`/user/${username}`);
+    const { data } = await api.get(`user/${username}`);
     return data;
 };
 
 export const fetchUserAnalysis = async (username) => {
-    const { data } = await api.get(`/analyze/${username}`);
+    const { data } = await api.get(`analyze/${username}`);
     return data;
 };
