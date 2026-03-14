@@ -9,15 +9,23 @@ router.get('/user/:username', async (req, res, next) => {
     } catch (error) {
         if (error.response && error.response.status === 404) return res.status(404).json({ error: 'User not found' });
 
-        const isAuthError =
-            (error.response && (error.response.status === 403 || error.response.status === 401)) ||
-            (error.message && (error.message.includes('403') || error.message.includes('401')));
+        const isRateLimit = error.response && error.response.status === 403 && 
+                           (error.response.headers['x-ratelimit-remaining'] === '0' || 
+                            JSON.stringify(error.response.data).toLowerCase().includes('rate limit'));
+        
+        if (isRateLimit) {
+            return res.status(429).json({
+                error: 'GitHub API rate limit exceeded.',
+                suggestion: 'Please add a valid GITHUB_TOKEN to your environment variables (Render/Vercel) to increase limits.',
+                details: 'Unauthenticated requests are limited to 60/hr. Authenticated requests allow 5,000/hr.'
+            });
+        }
 
-        if (isAuthError) {
-            const status = error.response ? error.response.status : 403;
-            return res.status(status).json({
-                error: 'GitHub API limit exceeded or Bad Credentials. Please add a valid GITHUB_TOKEN to backend/.env',
-                details: error.response ? error.response.data : error.message
+        if (error.response && (error.response.status === 401 || error.response.status === 403)) {
+            return res.status(error.response.status).json({
+                error: 'GitHub Authentication Error.',
+                suggestion: 'Verify that your GITHUB_TOKEN is correct and has the necessary permissions.',
+                details: error.response.data
             });
         }
         next(error);
@@ -207,15 +215,23 @@ router.get('/analyze/:username', async (req, res, next) => {
         });
 
     } catch (error) {
-        const isAuthError =
-            (error.response && (error.response.status === 403 || error.response.status === 401)) ||
-            (error.message && (error.message.includes('403') || error.message.includes('401')));
+        const isRateLimit = error.response && error.response.status === 403 && 
+                           (error.response.headers['x-ratelimit-remaining'] === '0' || 
+                            JSON.stringify(error.response.data).toLowerCase().includes('rate limit'));
 
-        if (isAuthError) {
-            const status = error.response ? error.response.status : 403;
-            return res.status(status).json({
-                error: 'GitHub API limit exceeded or Bad Credentials. Please add a valid GITHUB_TOKEN to backend/.env',
-                details: error.response ? error.response.data : error.message
+        if (isRateLimit) {
+            return res.status(429).json({
+                error: 'GitHub API rate limit exceeded during analysis.',
+                suggestion: 'Please add a valid GITHUB_TOKEN to your environment variables (Render/Vercel) to increase limits.',
+                details: 'Analysis requires many parallel requests. Unauthenticated limits (60/hr) are insufficient.'
+            });
+        }
+
+        if (error.response && (error.response.status === 401 || error.response.status === 403)) {
+            return res.status(error.response.status).json({
+                error: 'GitHub Authentication Error.',
+                suggestion: 'Verify that your GITHUB_TOKEN is correct and has the necessary permissions.',
+                details: error.response.data
             });
         }
         next(error);

@@ -4,6 +4,10 @@ require('dotenv').config();
 
 const apiRoutes = require('./routes/api');
 
+if (!process.env.GITHUB_TOKEN) {
+    console.warn('\x1b[33m%s\x1b[0m', 'WARNING: GITHUB_TOKEN is not set. GitHub API rate limits will be severely restricted (60 requests/hour).');
+}
+
 const app = express();
 const PORT = process.env.PORT || 5001;
 

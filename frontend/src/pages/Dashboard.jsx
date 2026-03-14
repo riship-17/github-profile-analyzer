@@ -33,7 +33,8 @@ const Dashboard = () => {
 
         } catch (err) {
             console.error(err);
-            setError(err.response?.data?.error || 'Failed to fetch user data. Please try again.');
+            const backendError = err.response?.data;
+            setError(backendError || 'Failed to fetch user data. Please try again.');
             setProfile(null);
             setAnalysis(null);
         } finally {
@@ -72,9 +73,25 @@ const Dashboard = () => {
                             initial={{ opacity: 0, y: 5 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.98 }}
-                            className="max-w-2xl bg-red-50 border border-red-100 text-red-600 p-4 rounded-xl mb-8"
+                            className="max-w-4xl bg-white border-l-4 border-red-500 shadow-sm p-6 rounded-xl mb-8 flex items-start gap-4"
                         >
-                            {error}
+                            <div className="p-2 bg-red-50 rounded-lg shrink-0">
+                                <Award size={20} className="text-red-500" />
+                            </div>
+                            <div className="flex-1">
+                                <h4 className="font-bold text-slate-900 mb-1">
+                                    {typeof error === 'string' ? 'An error occurred' : error.error}
+                                </h4>
+                                <p className="text-slate-600 text-sm mb-3">
+                                    {typeof error === 'string' ? error : error.details}
+                                </p>
+                                {error.suggestion && (
+                                    <div className="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                        <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">How to fix:</p>
+                                        <p className="text-slate-700 text-sm leading-relaxed">{error.suggestion}</p>
+                                    </div>
+                                )}
+                            </div>
                         </motion.div>
                     )}
 
